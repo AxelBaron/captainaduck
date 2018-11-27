@@ -1,0 +1,11 @@
+// _m-accordion.scss
+
+.accordion {
+  &__trigger {
+    cursor: pointer;
+  }
+
+  &__content {
+    display: none;
+  }
+}

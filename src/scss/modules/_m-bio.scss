@@ -1,0 +1,13 @@
+// _m-bio.scss
+
+.bio {
+  &__headline {
+    margin: 50px;
+    line-height: em(30px, 20px);
+    font-family: font('primary');
+    color: color('background');
+    @include font-size(30px);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

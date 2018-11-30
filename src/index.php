@@ -35,15 +35,79 @@
     </a>
   </div><!--/.social-media-->
 </div><!--/.header-->
+<div class="banner">
+    <div class="logo">
+        <img src="img/logo.png" alt="logo captain a. duck">
+    </div>
+    <div class="banner__boat">
+        <img src="img/boat.png" alt="bateau">
+    </div>
+</div><!--/.banner-->
+<article class="wrapper">
+    <h2 class="title title--first">Nouvel Album</h2>
+    <div class="player">
+        <div class="player__visual">
+            <div class="player__cover">
+                <img src="img/cover.jpg" alt="cover">
+            </div>
+            <div class="player__record">
+                <img src="img/record.png" alt="record">
+            </div>
+        </div><!--/.player-->
+        <iframe
+                src="https://open.spotify.com/embed/album/0azwYbDZAyqaP0yaekHGbD"
+                width="400" height="280"
+                frameborder="0" allowtransparency="true"
+                allow="encrypted-media">
 
-<div class="wip">
-  <h1 class="wip__title">
-    <span class="visually-hidden">Captain A. Duck</span>
-    <img src="img/logo-captain-a-duck.png" alt="Logo Captain A. Duck" class="wip__logo">
-  </h1>
-  <p class="wip__soon">Coming soon ...</p>
-  <div class="wip__boat"></div>
-</div>
+        </iframe>
+    </div>
+</article><!--/.wrapper-->
+
+<article class="wrapper">
+    <h2 class="title">Tour dates</h2>
+    <div class="tour">
+        <img src="img/band.png" alt="band">
+        <div class="tour__wrapper">
+            <div class="tour__item">
+                <div class="tour__img">
+                    <img src="img/picto-boat.png" alt="picto boat">
+                </div>
+                <div class="tour__content">
+                    <div class="tour__date">
+                        11 novembre 2018
+                    </div>
+                    <div class="tour__place">
+                        Le Barde Atomique (78)
+                    </div>
+                </div>
+            </div><!--/.tour__item-->
+            <div class="tour__item">
+                <div class="tour__img">
+                    <img src="img/picto-boat.png" alt="picto boat">
+                </div>
+                <div class="tour__content">
+                    <div class="tour__date">
+                        11 novembre 2018
+                    </div>
+                    <div class="tour__place">
+                        Le Barde Atomique (78)
+                    </div>
+                </div>
+            </div><!--/.tour__item-->
+        </div><!--/.tour__wrapper-->
+    </div><!--/.tour-->
+</article><!--/.wrapper-->
+
+<article class="wrapper">
+    <h2 class="title">Bio</h2>
+    <div class="bio">
+        <div class="bio__headline">
+            Captain A.Duck est un groupe de <br>
+            rock parisien composé de 4 membres
+        </div>
+    </div><!--/.bio-->
+</article><!--/.wrapper-->
 <script src="js/bundle.js"></script>
 </body>
 </html>

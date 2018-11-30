@@ -1,12 +1,11 @@
 // _c-title.scss
 
 .title {
-  font-family: font('primary');
-  margin: 15px 0;
+  font-family: font('secondary');
+  padding: 90px 0;
+  background: url("../img/scratch.png") center/cover;
+  text-align: center;
 
-  .card & {
-    margin-top: 0;
-  }
 
   &--primary { // h1 and primary level titles
     @include font-size(30px);
@@ -16,5 +15,9 @@
   &--secondary { // h2 and secondary level titles
     @include font-size(20px);
     color: color('secondary');
+  }
+
+  &--first {
+    margin-top: -70px;
   }
 }

@@ -1,0 +1,39 @@
+// _m-player.scss
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  &__visual {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 40px 0;
+  }
+
+  &__cover {
+    position: relative;
+    left: -50px;
+    z-index: 2;
+    img {
+      width: 300px;
+      box-shadow: 0px 0px 80px 0px rgba(0,0,0,0.75);
+    }
+  }
+
+  &__record {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: 0;
+    left: 90px;
+    z-index: 1;
+
+    img {
+      width: 280px;
+    }
+  }
+}

@@ -1,11 +1,36 @@
 // _c-title.scss
 
 .title {
+  position: relative;
+  z-index: 2;
   font-family: font('secondary');
-  padding: 90px 0;
-  background: url("../img/scratch.png") center/cover;
+  @include font-size(30px);
+  padding: 40px 0;
+  background: color('background');
   text-align: center;
+  color: color('foreground');
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: -27px;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 27px;
+    background: url("../img/scratch-top.png") repeat-x;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -27px;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 27px;
+    background: url("../img/scratch-bottom.png") repeat-x;
+  }
 
   &--primary { // h1 and primary level titles
     @include font-size(30px);
@@ -18,6 +43,6 @@
   }
 
   &--first {
-    margin-top: -70px;
+    margin-top: -5px;
   }
 }

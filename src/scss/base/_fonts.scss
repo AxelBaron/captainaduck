@@ -4,8 +4,8 @@
 @include font-face('HelveticaNeue', '../../fonts/HelveticaNeue/HelveticaNeue', 400, normal);
 @include font-face('HelveticaNeue', '../../fonts/HelveticaNeue/HelveticaNeue', 400, italic);
 
-@include font-face('Tarantino', '../../fonts/Tarantino/Tarantino-400', 400, normal);
-@include font-face('Tarantino', '../../fonts/Tarantino/Tarantino-400i', 400, italic);
+@include font-face('Tarantino', '../../fonts/Tarantino/Tarantino', 400, normal);
+@include font-face('Tarantino', '../../fonts/Tarantino/Tarantino', 400, italic);
 
 // FOR DEMO STYLES ---------------------------------------------------------------------------------------
 @include font-face('Butler', '../../fonts/demo/butler/butler-100', 200, normal, woff woff2);

@@ -22,7 +22,7 @@
     text-align: center;
     @include font-size(40px);
     font-weight: bold;
-    color: black;
+    color: color('foreground');
   }
 
   &__boat {

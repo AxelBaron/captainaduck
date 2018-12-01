@@ -4,11 +4,15 @@
   position: relative;
   z-index: 2;
   font-family: font('secondary');
-  @include font-size(30px);
+  @include font-size(20px);
   padding: 40px 0;
   background: color('background');
   text-align: center;
   color: color('foreground');
+
+  @include respond-to('medium') {
+    @include font-size(30px);
+  }
 
   &:before {
     content: '';

@@ -8,7 +8,6 @@
   var app = {
     init: function () {
       app.copyright();
-      app.accordion();
 
       /**
        * Init Triggers ----------
@@ -35,20 +34,6 @@
       });
     },
 
-    accordion: function () {
-      $(document).on('click', '.accordion__trigger', function (e) {
-        e.preventDefault();
-        var accordion = $(this).parent();
-        accordion.toggleClass('is-open');
-        accordion.find('.accordion__content').slideToggle();
-      });
-    },
-
-    trigger: function (e, el) {
-      e.stopPropagation();
-      el.toggleClass('is-open');
-    },
-
     sticky: function (el) {
       if ($(window).scrollTop() > el.height()) {
         el.addClass('is-sticky');
@@ -60,39 +45,6 @@
 
     copyright: function () {
       console.info("%c Axel Baron %c http://axelbaron.fr/", ' font-weight: bold; color: white; background: black;', 'font-weight: normal; font-style: italic; color: gray;');
-    },
-
-    slider: function (el) {
-      var button_prev = '<button class="slider__control slider__control--prev"><span class="icon icon-next"></span></button>';
-      var button_next = '<button class="slider__control slider__control--next"><span class="icon icon-next"></span></button>';
-
-      el.slick({
-        infinite: false,
-        autoplay: false,
-        swipeToSlide: true,
-        mobileFirst: true,
-        dots: true,
-        slidesToShow: 1,
-        prevArrow: button_prev,
-        nextArrow: button_next,
-        appendArrows: el.parent().find('.slider__controls'),
-        arrows: false,
-
-        // the magic
-        responsive: [{
-          breakpoint: 750,
-          settings: {
-            slidesToShow: 3
-          }
-        }, {
-          breakpoint: 1024,
-          settings: {
-            dots: false,
-            slidesToShow: 4,
-            arrows: true
-          }
-        }]
-      });
     }
   };
 
@@ -100,4 +52,13 @@
    * Init ----------
    */
   app.init();
+  $('#news, #dates, #about, #contact').on('click', function() { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      console.log(page);
+      var speed = 750; // Durée de l'animation (en ms)
+      var target = $(page).offset().top - 140;
+      $('html, body').animate( { scrollTop: target }, speed ); // Go
+      return false;
+  });
+
 })(jQuery);

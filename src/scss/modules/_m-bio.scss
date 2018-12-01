@@ -21,8 +21,14 @@
     position: relative;
     text-align: center;
     width: 24%;
-    height: 400px;
+    height: 485px;
     background: darken(color('primary'), 20%);
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
 
     &__content {
       position: absolute;
@@ -40,27 +46,33 @@
   }
 
   &__name {
-    @include font-size(20px);
+    @include font-size(30px);
     font-family: font('secondary');
     color: color('secondary');
   }
 
-  &__aka,
   &__role {
-    color: color('background');
+    margin-top: 10px;
     text-transform: uppercase;
   }
 
   &__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 960px;
     margin-top: 70px;
   }
 
   &__text,
-  &__bio {
+  &__img {
     width: 48%;
     line-height: em(24px, 16px);
+  }
+
+  &__txt {
+    p {
+      @include font-size(30px);
+    }
   }
 }

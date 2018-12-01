@@ -10,13 +10,19 @@
 <body>
 <div class="header">
     <div class="header__bg"></div>
+    <div class="header__sticky">
+        <a class="header__logo">
+            <img src="img/logo.png" alt="logo">
+        </a><!--/.header__logo-->
+    </div>
     <nav class="menu">
         <div class="menu__bg"></div>
-        <a class="menu__item" href="#news">News</a>
-        <a class="menu__item" href="#dates">Tour dates</a>
-        <a class="menu__item" href="#about">Bio</a>
-        <a class="menu__item" href="#contact">Contact</a>
+        <a id="news" class="menu__item" href="#target-news">News</a>
+        <a id="dates" class="menu__item" href="#target-dates">Tour dates</a>
+        <a id="about" class="menu__item" href="#target-about">Bio</a>
+        <a id="contact" class="menu__item" href="#target-contact">Contact</a>
     </nav><!--/.menu-->
+
     <div class="social-media">
         <a class="social-media__item social-media__item--facebook" href="https://www.facebook.com/CaptainADuck/" target="_blank">
             <i class="icon icon-facebook"></i>
@@ -43,7 +49,7 @@
         <img src="img/boat.png" alt="bateau">
     </div>
 </div><!--/.banner-->
-<article class="wrapper">
+<article class="wrapper" id="target-news">
     <h2 class="title title--first">Nouvel Album</h2>
     <div class="player">
         <div class="player__visual">
@@ -64,7 +70,7 @@
     </div>
 </article><!--/.wrapper-->
 
-<article class="wrapper">
+<article class="wrapper" id="target-dates">
     <h2 class="title">Tour dates</h2>
     <div class="tour">
         <img src="img/band.png" alt="band">
@@ -99,7 +105,7 @@
     </div><!--/.tour-->
 </article><!--/.wrapper-->
 
-<article class="wrapper">
+<article class="wrapper" id="target-about">
     <h2 class="title">Bio</h2>
     <div class="bio">
         <div class="bio__headline">
@@ -108,9 +114,10 @@
         </div>
         <div class="bio__profil__wrapper">
             <div class="bio__profil">
+                <img class="bio__profil__img" src="img/ced.jpg" alt="ced">
                 <div class="bio__profil__content">
                     <div class="bio__name">Cedric</div>
-                    <div class="bio__aka">a.k.a Ced</div>
+                    <div class="bio__aka">( a.k.a Ced )</div>
                     <div class="bio__role">
                         Chant <br>
                         Guitare
@@ -119,9 +126,10 @@
             </div><!--/.bio__profil-->
 
             <div class="bio__profil">
+                <img class="bio__profil__img" src="img/charly.jpg" alt="charly">
                 <div class="bio__profil__content">
                     <div class="bio__name">Charles</div>
-                    <div class="bio__aka">a.k.a Carlito</div>
+                    <div class="bio__aka">( a.k.a Carlito )</div>
                     <div class="bio__role">
                         Guitare <br>
                         Coeurs
@@ -130,9 +138,10 @@
             </div><!--/.bio__profil-->
 
             <div class="bio__profil">
+                <img class="bio__profil__img" src="img/aquouel.jpg" alt="aquouel">
                 <div class="bio__profil__content">
                     <div class="bio__name">Axel</div>
-                    <div class="bio__aka">a.k.a Captain eGroove</div>
+                    <div class="bio__aka">( a.k.a Captain eGroove )</div>
                     <div class="bio__role">
                         Basse <br>
                         Coeurs
@@ -141,9 +150,10 @@
             </div><!--/.bio__profil-->
 
             <div class="bio__profil">
+                <img class="bio__profil__img" src="img/raimon.jpg" alt="raimon">
                 <div class="bio__profil__content">
                     <div class="bio__name">Romain</div>
-                    <div class="bio__aka">a.k.a Raimon</div>
+                    <div class="bio__aka">( a.k.a Raimon )</div>
                     <div class="bio__role">
                         Batterie <br>
                         Coeurs
@@ -154,13 +164,52 @@
 
         <div class="bio__content">
             <div class="bio__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequatur deleniti error est ex facilis in, inventore libero, magni minus non perferendis qui quis, rerum saepe soluta tempora unde velit?
+                <p>
+                    Tout commence en Août 2014 quand Cédric Draignau et Charles
+                    Caisso se rencontrent par le biais d'une annonce postée
+                    sur internet. Chacun voulant monter un projet rock.
+                    Au fil des mois et des castings, le groupe commence à se
+                    former pour finalement obtenir l’osmose tant désirée.
+                    La formation s’appellera BLIS.
+                </p>
+                <p>
+                    Après des mois de répètes à peaufiner leurs morceaux,
+                    BLIS se lance en 2016 à la conquête des scènes parisiennes,
+                    qu’ils enchaînent en compagnie de divers groupes.
+                    Une communauté de fans commence à se créer.
+                </p>
+                <p>
+                    En juin 2017, BLIS autoproduit sa première démo :
+                    Out of Nowhere (Enregistrée et mixée par Adrien Jesupret).
+                    BLIS change de nom en juin 2018. Captain A. Duck est né.
+                </p>
             </div>
             <div class="bio__img">
-                <img src="img/bio.jpg" alt="bio">
+                <img src="img/rock.jpg" alt="bio">
             </div>
         </div>
     </div><!--/.bio-->
+</article><!--/.wrapper-->
+
+<article class="wrapper" id="target-contact">
+    <h2 class="title">Contact</h2>
+    <div class="contact">
+        <a href="mailto:captain.a.duck@gmail.com" class="contact__item">
+            <img class="contact__img" src="img/badge.png" alt="badge">
+            <div class="contact__content">
+                <span>Contactez-nous</span>
+                captain.a.duck@gmail.com
+            </div>
+        </a><!--/.contact__item-->
+
+        <a href="" class="contact__item">
+            <img class="contact__img" src="img/pdf.png" alt="pdf">
+            <div class="contact__content">
+                <span>Télécharger</span>
+                notre dossier de presse
+            </div>
+        </a><!--/.contact__item-->
+    </div><!--/.contact-->
 </article><!--/.wrapper-->
 <script src="js/bundle.js"></script>
 </body>

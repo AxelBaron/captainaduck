@@ -9,8 +9,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  background: color('primary');
   @include transition();
+
+  @include respond-to('medium'){
+    padding: 20px;
+  }
 
   &__sticky {
     position: absolute;

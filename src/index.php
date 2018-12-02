@@ -17,10 +17,21 @@
     </div>
     <nav class="menu">
         <div class="menu__bg"></div>
-        <a id="news" class="menu__item" href="#target-news">News</a>
-        <a id="dates" class="menu__item" href="#target-dates">Tour dates</a>
-        <a id="about" class="menu__item" href="#target-about">Bio</a>
-        <a id="contact" class="menu__item" href="#target-contact">Contact</a>
+        <div class="menu__trigger">
+            <div class="burger"></div>
+            <div class="menu__trigger__text">Menu</div>
+        </div>
+        <div class="menu__content">
+            <a id="news" class="menu__item" href="#target-news">News</a>
+            <a id="dates" class="menu__item" href="#target-dates">Tour dates</a>
+            <a id="about" class="menu__item" href="#target-about">Bio</a>
+            <a id="contact" class="menu__item" href="#target-contact">Contact</a>
+            <a class="menu__item" href="https://www.facebook.com/CaptainADuck/" target="_blank">Facebook</a>
+            <a class="menu__item" href="https://www.instagram.com/captainaduck/" target="_blank">Instagram</a>
+            <a class="menu__item" href="https://www.youtube.com/channel/UCE09YOLuTg-M57AJn0yKCng" target="_blank">Youtube</a>
+            <a class="menu__item" href="https://twitter.com/captainaduck" target="_blank">Twitter</a>
+            <a class="menu__item" href="https://www.snapchat.com/add/captainaduck" target="_blank">Snapchat</a>
+        </div>
     </nav><!--/.menu-->
 
     <div class="social-media">

@@ -13,16 +13,12 @@
        * Init Triggers ----------
        */
       var arr_triggers = [
-        '.choose-lang__trigger',
-        '.menu__trigger',
-        '.header__search-bar__trigger',
-        '.header__additional-links__trigger'
+        '.menu__trigger'
       ];
       $(document).on('click', arr_triggers.toString(), function (e) {
         e.preventDefault();
         app.trigger(e, $(this).parent());
       });
-
 
       /**
        * Init Sticky ----------
@@ -43,6 +39,12 @@
       //el.addClass('sticky');
     },
 
+    trigger: function (e, el) {
+        e.stopPropagation();
+        el.toggleClass('is-open');
+        el.find('.menu__content').slideToggle();
+    },
+
     copyright: function () {
       console.info("%c Axel Baron %c http://axelbaron.fr/", ' font-weight: bold; color: white; background: black;', 'font-weight: normal; font-style: italic; color: gray;');
     }
@@ -60,5 +62,9 @@
       $('html, body').animate( { scrollTop: target }, speed ); // Go
       return false;
   });
+
+    $('.menu__item').on('click', function() { // Au clic sur un élément
+        $(this).parent().slideToggle().parent().toggleClass('is-open');
+    });
 
 })(jQuery);

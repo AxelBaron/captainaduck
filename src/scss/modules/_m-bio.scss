@@ -5,29 +5,60 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 80px 0 110px 0;
+  width: 280px;
+  margin: 40px auto 80px auto;
+
+  @include respond-to('medium'){
+    margin: 80px 0 110px 0;
+  }
 
   &__headline {
-    margin: 50px;
+    margin: 20px;
     line-height: em(30px, 20px);
     font-family: font('primary');
     color: color('background');
-    @include font-size(30px);
+    @include font-size(22px);
     text-align: center;
     text-transform: uppercase;
+
+    @include respond-to('large'){
+      margin: 50px;
+      @include font-size(30px);
+    }
+
+    br {
+      display: none;
+
+      @include respond-to('medium'){
+        display: block;
+      }
+    }
   }
 
   &__profil {
     position: relative;
     text-align: center;
-    width: 24%;
+    width: 230px;
     height: 485px;
     background: darken(color('primary'), 20%);
+
+    @include respond-to('medium'){
+      width: 50%;
+    }
+
+    @include respond-to('large'){
+      width: 24%;
+    }
+
+    & + & {
+      margin-top: 30px;
+    }
 
     img {
       position: absolute;
       top: 0;
       left: 0;
+      height: 485px;
     }
 
     &__content {
@@ -39,9 +70,19 @@
 
     &__wrapper {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
-      width: 960px;
+      width: 280px;
+
+      @include respond-to('medium'){
+
+      }
+
+      @include respond-to('large'){
+
+      }
     }
   }
 
@@ -58,16 +99,39 @@
 
   &__content {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    width: 960px;
-    margin-top: 70px;
+    width: 280px;
+    margin-top: 30px;
+
+    @include respond-to('medium'){
+      width: 960px;
+      margin-top: 70px;
+    }
+
+    @include respond-to('large'){
+      width: 960px;
+    }
   }
 
   &__text,
   &__img {
-    width: 48%;
+    width: 100%;
     line-height: em(24px, 16px);
+
+    @include respond-to('medium'){
+      width: 48%;
+    }
+  }
+
+  &__img {
+    margin-top: 30px;
+
+    @include respond-to('medium'){
+      margin-top: 0;
+    }
   }
 
   &__txt {

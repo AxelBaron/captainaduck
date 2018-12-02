@@ -62,7 +62,6 @@
         </div><!--/.player-->
         <iframe
                 src="https://open.spotify.com/embed/album/0azwYbDZAyqaP0yaekHGbD"
-                width="400" height="280"
                 frameborder="0" allowtransparency="true"
                 allow="encrypted-media">
 

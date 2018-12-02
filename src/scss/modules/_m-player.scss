@@ -5,19 +5,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 80px 0 110px 0;
+  margin: 40px 0 80px 0;
+
+  @include respond-to('medium'){
+    margin: 80px 0 110px 0;
+  }
 
   &__visual {
     position: relative;
-    width: 300px;
-    height: 300px;
+    left: 12px;
+    @include size(180px);
     margin: 40px 0;
+
+    @include respond-to('medium'){
+      @include size(200px);
+    }
+
+    @include respond-to('large'){
+      @include size(300px);
+    }
   }
 
   &__cover {
     position: relative;
     left: -50px;
     z-index: 2;
+
     img {
       width: 300px;
       box-shadow: 0px 0px 80px 0px rgba(0,0,0,0.75);
@@ -26,14 +39,33 @@
 
   &__record {
     position: absolute;
-    width: 280px;
-    height: 280px;
-    top: 0;
-    left: 90px;
+    @include size(160px);
+    top: 8px;
+    left: 55px;
     z-index: 1;
+
+    @include respond-to('medium'){
+      @include size(280px);
+      top: 0;
+      left: 90px;
+    }
+
+    @include respond-to('large'){
+      @include size(280px);
+    }
 
     img {
       width: 280px;
+    }
+  }
+
+  iframe {
+    width: 280px;
+    height: 280px;
+
+    @include respond-to('medium'){
+      width: 400px;
+      height: 280px;
     }
   }
 }

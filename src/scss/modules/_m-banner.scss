@@ -10,7 +10,16 @@
   background: url('../img/ocean.jpg') center/cover;
 
   &__boat {
-    width: 500px;
+    width: 280px;
     margin-bottom: 50px;
+
+    @include respond-to('medium'){
+      width: 350px;
+    }
+
+    @include respond-to('large'){
+      width: 500px;
+      background: transparent;
+    }
   }
 }

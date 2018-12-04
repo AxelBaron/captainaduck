@@ -10,7 +10,7 @@
   min-height: 300px;
   background: url('../img/ocean.jpg') center/cover;
 
-  @include respond-to('medium') {
+  @include respond-to('large') {
     margin-top: 0;
   }
 

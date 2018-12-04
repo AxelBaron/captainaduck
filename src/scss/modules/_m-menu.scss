@@ -13,14 +13,6 @@
   text-transform: uppercase;
   font-weight: 700;
 
-  @include respond-to('medium') {
-
-  }
-
-  @include respond-to('large') {
-
-  }
-
   &__trigger {
     display: flex;
     justify-content: start;
@@ -29,7 +21,7 @@
     border-bottom: 1px solid color('background');
     cursor: pointer;
 
-    @include respond-to('medium') {
+    @include respond-to('large') {
       display: none;
     }
 
@@ -49,7 +41,7 @@
 
     }
 
-    @include respond-to('medium') {
+    @include respond-to('large') {
       display: block;
     }
   }
@@ -63,19 +55,15 @@
     text-decoration: none;
     @include transition();
 
-    @include respond-to('medium') {
+    @include respond-to('large') {
       display: inline;
       padding: 0;
       border-bottom: none;
       margin: 0 10px;
     }
 
-    @include respond-to('large') {
-
-    }
-
     &--mobile {
-      @include respond-to('medium') {
+      @include respond-to('large') {
         display: none;
       }
     }

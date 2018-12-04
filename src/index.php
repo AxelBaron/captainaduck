@@ -22,7 +22,7 @@
             <div class="menu__trigger__text">Menu</div>
         </div>
         <div class="menu__content">
-            <a id="news" class="menu__item" href="#target-news">News</a>
+            <a id="news" class="menu__item" href="#target-news">Discographie</a>
             <a id="dates" class="menu__item" href="#target-dates">Tour dates</a>
             <a id="about" class="menu__item" href="#target-about">Bio</a>
             <a id="contact" class="menu__item" href="#target-contact">Contact</a>

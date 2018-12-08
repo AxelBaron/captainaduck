@@ -15,7 +15,6 @@
 
   @include respond-to('large') {
     width: $screen-md;
-    margin: 80px auto 110px auto;
   }
 
   &__headline {
@@ -27,9 +26,13 @@
     text-align: center;
     text-transform: uppercase;
 
-    @include respond-to('large') {
-      margin: 50px;
+    @include respond-to('medium') {
+      margin-bottom: 35px;
       @include font-size(30px);
+    }
+
+    @include respond-to('large') {
+      margin-bottom: 50px;
     }
 
     br {
@@ -127,15 +130,15 @@
     margin-top: 30px;
 
     @include respond-to('medium') {
-      flex-direction: row;
-      align-items: start;
-      width: $screen-sm;
-      padding: 0 20px;
-      margin-top: 70px;
+      width: 625px;
     }
 
     @include respond-to('large') {
+      flex-direction: row;
+      align-items: start;
       width: $screen-md;
+      padding: 0 20px;
+      margin-top: 70px;
     }
   }
 
@@ -144,7 +147,7 @@
     width: 100%;
     line-height: em(24px, 16px);
 
-    @include respond-to('medium') {
+    @include respond-to('large') {
       width: 48%;
     }
   }
@@ -152,7 +155,7 @@
   &__img {
     margin-top: 30px;
 
-    @include respond-to('medium') {
+    @include respond-to('large') {
       margin-top: 0;
     }
   }

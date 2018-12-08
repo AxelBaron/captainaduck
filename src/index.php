@@ -12,7 +12,7 @@
     <div class="header__bg"></div>
     <div class="header__sticky">
         <a class="header__logo">
-            <img src="img/logo.png" alt="logo">
+            <img src="img/logo--white.png" alt="logo">
         </a><!--/.header__logo-->
     </div>
     <nav class="menu">
@@ -26,11 +26,25 @@
             <a id="dates" class="menu__item" href="#target-dates">Tour dates</a>
             <a id="about" class="menu__item" href="#target-about">Bio</a>
             <a id="contact" class="menu__item" href="#target-contact">Contact</a>
-            <a class="menu__item menu__item--mobile" href="https://www.facebook.com/CaptainADuck/" target="_blank">Facebook</a>
-            <a class="menu__item menu__item--mobile" href="https://www.instagram.com/captainaduck/" target="_blank">Instagram</a>
-            <a class="menu__item menu__item--mobile" href="https://www.youtube.com/channel/UCE09YOLuTg-M57AJn0yKCng" target="_blank">Youtube</a>
-            <a class="menu__item menu__item--mobile" href="https://twitter.com/captainaduck" target="_blank">Twitter</a>
-            <a class="menu__item menu__item--mobile" href="https://www.snapchat.com/add/captainaduck" target="_blank">Snapchat</a>
+            <div class="menu__item menu__item--mobile">
+                <div class="social-media">
+                    <a class="social-media__item social-media__item--facebook" href="https://www.facebook.com/CaptainADuck/" target="_blank">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                    <a class="social-media__item social-media__item--instagram" href="https://www.instagram.com/captainaduck/" target="_blank">
+                        <i class="icon icon-instagram-logo"></i>
+                    </a>
+                    <a class="social-media__item social-media__item--youtube" href="https://www.youtube.com/channel/UCE09YOLuTg-M57AJn0yKCng" target="_blank">
+                        <i class="icon icon-youtube"></i>
+                    </a>
+                    <a class="social-media__item social-media__item--twitter" href="https://twitter.com/captainaduck" target="_blank">
+                        <i class="icon icon-twitter"></i>
+                    </a>
+                    <a class="social-media__item social-media__item--snapchat" href="https://www.snapchat.com/add/captainaduck" target="_blank">
+                        <i class="icon icon-snapchat"></i>
+                    </a>
+                </div><!--/.social-media-->
+            </div>
         </div>
     </nav><!--/.menu-->
 
@@ -91,7 +105,7 @@
                 </div>
                 <div class="tour__content">
                     <div class="tour__date">
-                        26 janvier 2018
+                        26 janvier 2019
                     </div>
                     <div class="tour__place">
                         Paris (75) - L'improvibar
@@ -104,7 +118,7 @@
                 </div>
                 <div class="tour__content">
                     <div class="tour__date">
-                        7 Fevrier 2018
+                        7 Fevrier 2019
                     </div>
                     <div class="tour__place">
                         Lille (59) - Le Biplan
@@ -148,7 +162,7 @@
             </div><!--/.bio__profil-->
 
             <div class="bio__profil">
-                <img class="bio__profil__img" src="img/aquouel.jpg" alt="aquouel">
+                <img class="bio__profil__img" src="img/aquouel.png" alt="aquouel">
                 <div class="bio__profil__content">
                     <div class="bio__name">Axel</div>
                     <div class="bio__aka">( a.k.a Captain eGroove )</div>
@@ -212,7 +226,7 @@
             </div>
         </a><!--/.contact__item-->
 
-        <a href="" class="contact__item">
+        <a href="img/dossier-de-presse-captain-a-duck.zip" class="contact__item">
             <img class="contact__img" src="img/pdf.png" alt="pdf">
             <div class="contact__content">
                 <span>Télécharger</span>

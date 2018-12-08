@@ -3,6 +3,10 @@
 .social-media {
   display: none;
 
+  .menu & {
+    display: block;
+  }
+
   @include respond-to('large'){
     display: flex;
     justify-content: space-between;
@@ -15,10 +19,16 @@
     text-decoration: none;
 
     i {
-      margin: 0 10px;
+      display: inline-block;
+      margin: 0 20px;
+      padding: 10px 0;
       @include font-size(40px);
       cursor: pointer;
       @include transition();
+
+      @include respond-to('medium'){
+        margin: 0 10px;
+      }
 
       &:hover{
         color: color('secondary');

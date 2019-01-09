@@ -156,7 +156,7 @@
                     <div class="bio__aka">( a.k.a Carlito )</div>
                     <div class="bio__role">
                         Guitare <br>
-                        Coeurs
+                        Choeurs
                     </div>
                 </div>
             </div><!--/.bio__profil-->
@@ -168,7 +168,7 @@
                     <div class="bio__aka">( a.k.a Captain eGroove )</div>
                     <div class="bio__role">
                         Basse <br>
-                        Coeurs
+                        Choeurs
                     </div>
                 </div>
             </div><!--/.bio__profil-->
@@ -180,7 +180,7 @@
                     <div class="bio__aka">( a.k.a Raimon )</div>
                     <div class="bio__role">
                         Batterie <br>
-                        Coeurs
+                        Choeurs
                     </div>
                 </div>
             </div><!--/.bio__profil-->

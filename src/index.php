@@ -76,6 +76,11 @@
 </div><!--/.banner-->
 <article class="wrapper" id="target-news">
     <h2 class="title title--first">Nouvel Album</h2>
+    <p class="text text--center">Disponible sur toutes les plateformes,
+        <a class="link" target="_blank" href="https://spoti.fi/2AZ7U6i">Spotify</a>,
+        <a class="link" target="_blank" href="https://bit.ly/2HsJM1t">Deezer</a>,
+        <a class="link" target="_blank" href="https://bit.ly/2S3NUsD">Youtube</a>,
+        <a class="link" target="_blank" href="https://apple.co/2G04ROj">Itunes</a> ... </p>
     <div class="player">
         <div class="player__visual">
             <div class="player__cover">
@@ -86,10 +91,9 @@
             </div>
         </div><!--/.player-->
         <iframe
-                src="https://open.spotify.com/embed/album/0azwYbDZAyqaP0yaekHGbD"
+                src="https://open.spotify.com/embed/album/1L7dT8lArHo1eOb270eZau"
                 frameborder="0" allowtransparency="true"
                 allow="encrypted-media">
-
         </iframe>
     </div>
 </article><!--/.wrapper-->
@@ -99,7 +103,7 @@
     <div class="tour">
         <img src="img/band.png" alt="band">
         <div class="tour__wrapper">
-            <div class="tour__item">
+            <!-- <div class="tour__item">
                 <div class="tour__img">
                     <img src="img/picto-boat.png" alt="picto boat">
                 </div>
@@ -111,7 +115,7 @@
                         Paris (75) - L'improvibar
                     </div>
                 </div>
-            </div><!--/.tour__item-->
+            </div>--><!--/.tour__item-->
             <div class="tour__item">
                 <div class="tour__img">
                     <img src="img/picto-boat.png" alt="picto boat">
@@ -122,6 +126,19 @@
                     </div>
                     <div class="tour__place">
                         Lille (59) - Le Biplan
+                    </div>
+                </div>
+            </div><!--/.tour__item-->
+            <div class="tour__item">
+                <div class="tour__img">
+                    <img src="img/picto-boat.png" alt="picto boat">
+                </div>
+                <div class="tour__content">
+                    <div class="tour__date">
+                        7 Juin 2019
+                    </div>
+                    <div class="tour__place">
+                        Eragny (95) - Covent Garden Studios
                     </div>
                 </div>
             </div><!--/.tour__item-->
@@ -218,11 +235,11 @@
 <article class="wrapper" id="target-contact">
     <h2 class="title">Contact</h2>
     <div class="contact">
-        <a href="mailto:captain.a.duck@gmail.com" class="contact__item">
+        <a href="mailto:booking.captainaduck@gmail.com" class="contact__item">
             <img class="contact__img" src="img/badge.png" alt="badge">
             <div class="contact__content">
                 <span>Contactez-nous</span>
-                captain.a.duck@gmail.com
+                booking.captainaduck@gmail.com
             </div>
         </a><!--/.contact__item-->
 

@@ -63,11 +63,11 @@
 
   iframe {
     width: 280px;
-    height: 280px;
+    height: 500px;
 
     @include respond-to('medium'){
       width: 400px;
-      height: 280px;
+      height: 500px;
     }
   }
 }

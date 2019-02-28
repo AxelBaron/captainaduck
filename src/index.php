@@ -115,7 +115,7 @@
                         Paris (75) - L'improvibar
                     </div>
                 </div>
-            </div>--><!--/.tour__item-->
+            </div>
             <div class="tour__item">
                 <div class="tour__img">
                     <img src="img/picto-boat.png" alt="picto boat">
@@ -128,6 +128,19 @@
                         Lille (59) - Le Biplan
                     </div>
                 </div>
+            </div> -->
+            <div class="tour__item">
+                <div class="tour__img">
+                    <img src="img/picto-boat.png" alt="picto boat">
+                </div>
+                <div class="tour__content">
+                    <div class="tour__date">
+                        10 Mars 2019
+                    </div>
+                    <div class="tour__place">
+                        Paris (75) - Le Gambetta Club
+                    </div>
+                </div>
             </div><!--/.tour__item-->
             <div class="tour__item">
                 <div class="tour__img">
@@ -135,7 +148,7 @@
                 </div>
                 <div class="tour__content">
                     <div class="tour__date">
-                        7 Juin 2019
+                        5 Juillet 2019
                     </div>
                     <div class="tour__place">
                         Eragny (95) - Covent Garden Studios

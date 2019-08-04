@@ -128,7 +128,7 @@
                         Lille (59) - Le Biplan
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="tour__item">
                 <div class="tour__img">
                     <img src="img/picto-boat.png" alt="picto boat">
@@ -141,7 +141,7 @@
                         Paris (75) - Le Gambetta Club
                     </div>
                 </div>
-            </div><!--/.tour__item-->
+            </div>
             <div class="tour__item">
                 <div class="tour__img">
                     <img src="img/picto-boat.png" alt="picto boat">
@@ -152,6 +152,19 @@
                     </div>
                     <div class="tour__place">
                         Eragny (95) - Covent Garden Studios
+                    </div>
+                </div>
+            </div>--><!--/.tour__item-->
+            <div class="tour__item">
+                <div class="tour__img">
+                    <img src="img/picto-boat.png" alt="picto boat">
+                </div>
+                <div class="tour__content">
+                    <div class="tour__date">
+                        29 Septembre 2019
+                    </div>
+                    <div class="tour__place">
+                        Montreuil (93) - La Comédia
                     </div>
                 </div>
             </div><!--/.tour__item-->
